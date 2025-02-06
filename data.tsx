@@ -2,11 +2,6 @@ import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Twitter, Rss, Twit
 
 export const socialNetworks = [
     {
-        id: 1,
-        logo: <Youtube size={30} strokeWidth={1} />,
-        src: "#!",
-    },
-    {
         id: 2,
         logo: <Linkedin size={30} strokeWidth={1} />,
         src: "#!",
