@@ -1,4 +1,4 @@
-import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Twitter, Rss, Twitch, Youtube, Crop, Pencil, Computer, Book, Rocket, Speech } from "lucide-react";
+import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Twitter, Rss, Twitch, Youtube, Crop, Pencil, Computer, Book, Rocket, Instagram, Speech } from "lucide-react";
 
 export const socialNetworks = [
     {
@@ -13,7 +13,7 @@ export const socialNetworks = [
     },
     {
         id: 4,
-        logo: <Rss size={30} strokeWidth={1} />,
+        logo: <Instagram size={30} strokeWidth={1} />,
         src: "#!",
     },
     {
