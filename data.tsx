@@ -4,22 +4,17 @@ export const socialNetworks = [
     {
         id: 2,
         logo: <Linkedin size={30} strokeWidth={1} />,
-        src: "#!",
+        src: "https://www.linkedin.com/in/francisco-godoy-6b7868279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     },
     {
         id: 3,
         logo: <Twitter size={30} strokeWidth={1} />,
-        src: "#!",
+        src: "https://x.com/frang0doy?mx=2",
     },
     {
         id: 4,
         logo: <Instagram size={30} strokeWidth={1} />,
-        src: "#!",
-    },
-    {
-        id: 5,
-        logo: <Twitch size={30} strokeWidth={1} />,
-        src: "#!",
+        src: "https://www.instagram.com/frang0doy/",
     },
 ];
 
@@ -49,12 +44,7 @@ export const itemsNavbar = [
         icon: <CodeSquare size={25} color="#fff" strokeWidth={1} />,
         link: "/portfolio",
     },
-    {
-        id: 5,
-        title: "Home",
-        icon: <Speech size={25} color="#fff" strokeWidth={1} />,
-        link: "/testimonials",
-    },
+    
 ];
 
 export const dataAboutPage = [
