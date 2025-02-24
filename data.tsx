@@ -61,30 +61,52 @@ export const dataAboutPage = [
     {
         id: 1,
         title: "Frontend Developer",
-        subtitle: "TechSolutions",
-        description: "Colabora con un equipo dinámico para desarrollar interfaces de usuario atractivas y funcionales que impulsen el éxito de nuestros clientes en el mundo digital.",
-        date: "Nov 2023 ",
+        subtitle: "ProtoNature",
+        description: "Desarrollé un eCommerce completo en React, con funcionalidades como gestión de productos, carrito de compras, pagos y autenticación de usuarios. La aplicación es completamente responsiva, ofreciendo una experiencia de usuario fluida y optimizada para todos los dispositivos",
+        date: "Ene 2025 ",
     },
     {
         id: 2,
-        title: "Creador de Experiencias Digitales",
-        subtitle: "PixelCrafters",
-        description: "Trabaja en proyectos emocionantes que desafían los límites de la creatividad y la tecnología. Únete a nosotros mientras creamos experiencias digitales cautivadoras que inspiran y cautivan a nuestros usuarios.",
-        date: "May 2021",
+        title: "App Climatica",
+        subtitle: "Taggify",
+        description: "Creé una aplicación del clima que permite consultar el pronóstico en tiempo real de cualquier ciudad del mundo. Utilizando APIs para obtener datos meteorológicos, la app presenta un diseño limpio y fácil de usar, mostrando la temperatura, condiciones climáticas y más, con una interfaz amigable y optimizada.",
+        date: "June 2024",
     },
     {
         id: 3,
-        title: "Especialista en Desarrollo Frontend",
-        subtitle: "CodeForge Solutions",
-        description: "Como desarrollador frontend, tendrás la oportunidad de colaborar en proyectos diversos y desafiantes que te permitirán expandir tus habilidades y dejar tu huella en el mundo digital.",
-        date: "Ago 2019",
+        title: "Codo a Codo",
+        subtitle: "Curso Python Full Stack",
+        description: "",
+        date: "2024",
     },
     {
         id: 4,
-        title: "Prácticas Grado",
-        subtitle: "WebWizards Inc.",
-        description: "Únete a nosotros mientras creamos sitios web y aplicaciones interactivas que sorprenden y deleitan a nuestros clientes. Si tienes pasión por el diseño y la programación, y disfrutas colaborar en un entorno creativo, ¡queremos conocerte!        ",
-        date: "Mar 2018",
+        title: "Platzi",
+        subtitle: "Curso definitivo HTML Y CSS",
+        description: " ",
+        date: "2023",
+    },
+    {
+        id: 5,
+        title: "Compañia Telefonica ",
+        subtitle: "Cursos",
+        description: "Wordpres / Javascript / Html5 y css / Metodologias Agiles ",
+        date: "2023",
+        
+    },
+    {
+        id: 6,
+        title: "Teclab Intituto",
+        subtitle: "Tecnico Superior en Progrmacion",
+        description: "Graduado",
+        date: "2022-2024",
+    },
+    {
+        id: 7,
+        title: "Colegio Cervante",
+        subtitle: "Bachillerato en ciencias sociales",
+        description: "",
+        date: "Dic 2018",
     },
 ]
 
@@ -165,47 +187,3 @@ export const dataPortfolio = [
     
 ];
 
-export const dataTestimonials = [
-    {
-        id: 1,
-        name: "George Snow",
-        description:
-            "¡Increíble plataforma! Los testimonios aquí son genuinos y me han ayudado a tomar decisiones informadas. ¡Altamente recomendado!",
-        imageUrl: "/profile1.png",
-    },
-    {
-        id: 2,
-        name: "Juan Pérez",
-        description:
-            "Me encanta la variedad de testimonios disponibles en esta página. Es inspirador ver cómo otras personas han superado desafíos similares a los míos. ¡Gracias por esta invaluable fuente de motivación!",
-        imageUrl: "/profile2.png",
-    },
-    {
-        id: 3,
-        name: "María García",
-        description:
-            "Excelente recurso para obtener opiniones auténticas sobre diferentes productos y servicios. Me ha ayudado mucho en mis compras en línea. ¡Bravo por este sitio!",
-        imageUrl: "/profile3.png",
-    },
-    {
-        id: 4,
-        name: "Laura Snow",
-        description:
-            "¡Qué descubrimiento tan fantástico! Los testimonios aquí son honestos y detallados. Me siento más seguro al tomar decisiones después de leer las experiencias compartidas por otros usuarios.",
-        imageUrl: "/profile4.png",
-    },
-    {
-        id: 5,
-        name: "Carlos Sánchez",
-        description:
-            "Una joya en la web. Los testimonios son fáciles de encontrar y están bien organizados. ¡Definitivamente mi destino número uno cuando necesito referencias confiables!",
-        imageUrl: "/profile5.png",
-    },
-    {
-        id: 6,
-        name: "Antonio Martínez",
-        description:
-            "¡Fantástico recurso para aquellos que buscan validación antes de tomar decisiones importantes! Los testimonios aquí son veraces y realmente útiles. ¡Gracias por simplificar mi proceso de toma de decisiones!",
-        imageUrl: "/profile6.png",
-    },
-];
