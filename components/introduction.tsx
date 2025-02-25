@@ -6,28 +6,29 @@ const Introduction = () => {
         <div className="z-20 w-full bg-darkBg/60">
             <div className="z-20 grid items-center h-full p-6 py-20 md:py-0 md:grid-cols-2">
                 {/* Imagen personal centrada y tamaño ajustado */}
-                <div className="flex justify-center mb-8 md:mb-0 mt-16">
-    <Image 
-        src="/mi-foto.jpg" 
-        priority 
-        width={300} 
-        height={300} 
-        alt="Foto personal" 
-        className="rounded-full object-cover"
-    />
-</div>
+                <div className="flex justify-center mb-8 md:mb-0 mt-16 md:mt-0">
+                    <Image 
+                        src="/mi-foto.jpg" 
+                        priority 
+                        width={300} 
+                        height={300} 
+                        alt="Foto personal" 
+                        className="rounded-full object-cover"
+                    />
+                </div>
 
-                
-                <div className="flex flex-col justify-center max-w-md mt-8 md:mt-0">
+                {/* Contenedor de texto y botones */}
+                <div className="flex flex-col justify-center max-w-md mt-8 md:mt-0 items-center md:items-start">
                     <h1 className="mb-5 text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-10">
                         Técnico Superior en Programación<br />
                     </h1>
 
-                    <p className="mx-auto mb-2 text-xl md:text-xl md:mx-0 md:mb-8">
+                    <p className="mx-auto mb-2 text-xl md:text-xl md:mx-0 md:mb-8 text-center md:text-left">
                         Como desarrollador fullstack, trabajo con Net/c# , Javascript, react , vue , angular y sql Server. Trabajo en proyectos propios para seguir capacitándome, me defino como una persona con ganas de aprender y desafiarme día a día, listo para un nuevo reto.
                     </p>
 
-                    <div className="flex items-center justify-center gap-3 md:justify-start md:gap-10 mt-5">
+                    {/* Contenedor de los botones, centrado horizontalmente */}
+                    <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:justify-start mt-5 w-full">
                         {/* Botón Contacta conmigo - Enlace mailto */}
                         <a 
                             href="mailto:franciscogodoy_@hotmail.com" 
