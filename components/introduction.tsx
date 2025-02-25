@@ -28,7 +28,7 @@ const Introduction = () => {
                     </p>
 
                     {/* Contenedor de los botones, centrado horizontalmente */}
-                    <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:justify-start mt-5 w-full">
+                    <div className="flex flex-row items-center justify-center gap-6 mt-5 w-full">
                         {/* Botón Contacta conmigo - Enlace mailto */}
                         <a 
                             href="mailto:franciscogodoy_@hotmail.com" 
