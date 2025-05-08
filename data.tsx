@@ -174,6 +174,13 @@ export const dataPortfolio = [
         urlGithub: "https://github.com/frang0doy/widget",
         urlDemo: "https://widget-puce-nu.vercel.app/",
     },
+    {
+        id: 3,
+        title: "Dashboard",
+        image: "/image-3.png",
+        urlGithub: "http://github.com/frang0doy/dashboard",
+        urlDemo: "https://dashboard-three-sooty-78.vercel.app/",
+    },
     
 ];
 
