@@ -135,7 +135,7 @@ export const serviceData = [
     {
         icon: <Crop />,
         title: "Branding",
-        description: "Desarrollo de una identidad de marca sólida y coherente, incluyendo diseño de logotipo, colores y elementos visuales",
+        description: "Desarrollo de una identidad de marca sólida y coherente, incluyendo diseño de logotipo.",
     },
     {
         icon: <Pencil />,
@@ -165,7 +165,7 @@ export const dataPortfolio = [
         title: "Web ProtoNature",
         image: "/image-1.jpg",
         urlGithub: "https://github.com/frang0doy/proto-nature",
-        urlDemo: "https://proto-nature.vercel.app/",
+        urlDemo: "https://www.protonature.com/",
     },
     {
         id: 2,
@@ -179,7 +179,14 @@ export const dataPortfolio = [
         title: "Dashboard",
         image: "/image-3.png",
         urlGithub: "http://github.com/frang0doy/dashboard",
-        urlDemo: "https://dashboard-three-sooty-78.vercel.app/",
+        urlDemo: "https://dashboard-three-sooty-78.vercel.app/login",
+    },
+    {
+        id: 4,
+        title: "Haras Chimpay",
+        image: "/haras-chimpay.png",
+        urlGithub: "https://github.com/frang0doy/haras-chimpay",
+        urlDemo: "https://haras-chimpay.vercel.app/",
     },
     
 ];
