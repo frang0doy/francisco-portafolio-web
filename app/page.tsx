@@ -3,6 +3,7 @@
 import { CoverParticles } from "@/components/cover-particles";
 import Introduction from "@/components/introduction";
 import TransitionPage from "@/components/transition-page";
+import SkillsSection from "@/components/skills-section";
 
 export default function Home() {
   return (
@@ -12,6 +13,9 @@ export default function Home() {
         <CoverParticles />
         <Introduction />
       </div>
+      
+      {/* Sección de habilidades */}
+      <SkillsSection />
     </main>
   );
 }
