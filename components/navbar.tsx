@@ -17,9 +17,26 @@ const Navbar = () => {
                     {itemsNavbar.map((item) => (
                         <div
                             key={item.id}
-                            className={`p-3 transition duration-150 rounded-full cursor-pointer hover:bg-secondary ${router === item.link && 'bg-secondary'}`}
-                            data-tooltip-target="tooltip-default">
-                            <Link href={item.link}>{item.icon} </Link>
+                            className="group relative"
+                        >
+                            <div
+                                className={`p-3 transition duration-150 rounded-full cursor-pointer hover:bg-secondary ${router === item.link && 'bg-secondary'}`}
+                            >
+                                <Link 
+                                    href={item.link}
+                                    aria-label={item.title}
+                                    title={item.title}
+                                >
+                                    {item.icon}
+                                </Link>
+                            </div>
+                            {/* Tooltip */}
+                            <div className="absolute right-16 top-1/2 transform -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+                                <div className="bg-darkGray/95 border border-lightGray/50 rounded-lg px-3 py-2 text-sm text-secondary backdrop-blur-sm">
+                                    {item.title}
+                                    <div className="absolute right-0 top-1/2 transform translate-x-full -translate-y-1/2 border-4 border-transparent border-l-darkGray/95"></div>
+                                </div>
+                            </div>
                         </div>
                     ))}
                 </div>

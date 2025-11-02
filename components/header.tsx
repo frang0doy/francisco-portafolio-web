@@ -9,7 +9,7 @@ const Header = () => {
         <MotionTransition position="bottom" className="absolute z-40 inline-block w-full top-5 md:top-10">
             <header>
                 <div className="container justify-between max-w-6xl mx-auto md:flex">
-                    <Link href='/'>
+                    <Link href='/' aria-label="Ir al inicio">
                         <h1 className="my-3 text-4xl font-bold text-center md:text-left">
                             Francisco 
                             <span className="text-secondary">Godoy</span>
@@ -21,7 +21,9 @@ const Header = () => {
                                 key={id}
                                 href={src}
                                 target="_blank"
-                                className="transition-all duration-300 hover:text-secondary"
+                                rel="noopener noreferrer"
+                                aria-label={`Visitar perfil en ${src.includes('linkedin') ? 'LinkedIn' : src.includes('twitter') ? 'Twitter' : src.includes('instagram') ? 'Instagram' : 'Red social'}`}
+                                className="transition-all duration-300 hover:text-secondary focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 focus:ring-offset-darkBg rounded"
                             >
                                 {logo}
                             </Link>

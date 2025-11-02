@@ -187,6 +187,7 @@ export const skillsData = [
             { name: "React" },
             { name: "Vue.js" },
             { name: "Angular" },
+            { name: "Next.js" },
             { name: "JavaScript" },
             { name: "HTML5" },
             { name: "CSS3" },
@@ -211,7 +212,6 @@ export const skillsData = [
             { name: "Docker" },
             { name: "AWS" },
             { name: "Figma" },
-            { name: "Next.js" },
             { name: "Firebase" },
         ]
     }

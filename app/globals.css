@@ -4,27 +4,46 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 html,
 body {
-  color: #fff;
-  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+  color: #ffffff;
+  background: #0a0a0a;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 main {
-  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+  background: #0a0a0a;
   min-height: 100vh;
   min-height: 100dvh;
 }
 
 /* Variables CSS personalizadas */
 :root {
-  --primary: #f5741c;
-  --secondary: #00d4ff;
-  --darkBg: #0f0f23;
-  --accent: #e94560;
+  --primary: #ffffff;
+  --secondary: #d4d4d4;
+  --accent: #525252;
+  --darkBg: #0a0a0a;
+  --darkGray: #171717;
+  --mediumGray: #262626;
+  --lightGray: #404040;
 }
 
 /* Estilos para el scrollbar */
@@ -33,27 +52,27 @@ main {
 }
 
 ::-webkit-scrollbar-track {
-  background: #1a1a2e;
+  background: #171717;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, var(--secondary), var(--primary));
+  background: #525252;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, var(--primary), var(--secondary));
+  background: #737373;
 }
 
-/* Animaciones personalizadas */
+/* Animaciones personalizadas sutiles */
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
+  50% { transform: translateY(-5px); }
 }
 
 @keyframes glow {
-  0%, 100% { box-shadow: 0 0 20px rgba(0, 212, 255, 0.3); }
-  50% { box-shadow: 0 0 30px rgba(245, 116, 28, 0.5); }
+  0%, 100% { box-shadow: 0 0 5px rgba(255, 255, 255, 0.05); }
+  50% { box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); }
 }
 
 .animate-float {
@@ -68,36 +87,47 @@ main {
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets
   .swiper-pagination-bullet {
-  background-color: var(--primary);
+  background-color: var(--secondary);
 }
 
 /* Efectos de glassmorphism */
 .glass {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Gradientes personalizados */
 .gradient-text {
-  background: linear-gradient(135deg, var(--secondary), var(--primary));
+  background: linear-gradient(135deg, #ffffff, #d4d4d4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .gradient-bg {
-  background: linear-gradient(135deg, var(--secondary), var(--primary));
+  background: linear-gradient(135deg, #262626, #171717);
 }
 
-/* Efectos hover mejorados */
+/* Efectos hover sutiles */
 .hover-lift {
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .hover-lift:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Smooth scroll mejorado */
+* {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 @layer utilities {
@@ -106,6 +136,6 @@ main {
   }
   
   .bg-gradient-cover {
-    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+    background: #0a0a0a;
   }
 }
