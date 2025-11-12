@@ -1,21 +1,54 @@
 "use client"
 
-import { CoverParticles } from "@/components/cover-particles";
 import Introduction from "@/components/introduction";
 import TransitionPage from "@/components/transition-page";
-import SkillsSection from "@/components/skills-section";
+import ServicesSection from "@/components/services-section";
+import FeaturedProjects from "@/components/featured-projects";
+import WhatIOffer from "@/components/what-i-offer";
+import ToolsSection from "@/components/tools-section";
+import Footer from "@/components/footer";
+import ScrollToTop from "@/components/scroll-to-top";
+import SectionDivider from "@/components/section-divider";
 
 export default function Home() {
   return (
-    <main>
+    <main className="pb-20 md:pb-0">
       <TransitionPage />
-      <div className="flex min-h-[100vh] h-full bg-no-repeat bg-gradient-cover">
-        <CoverParticles />
-        <Introduction />
-      </div>
       
-      {/* Sección de habilidades */}
-      <SkillsSection />
+      {/* Hero Section */}
+      <section id="home">
+        <Introduction />
+      </section>
+      
+      {/* Sección de Servicios */}
+      <section id="services">
+        <SectionDivider />
+        <ServicesSection />
+      </section>
+      
+      {/* Proyectos Destacados */}
+      <section id="portfolio">
+        <SectionDivider />
+        <FeaturedProjects />
+      </section>
+      
+      {/* Lo que ofrezco como desarrollador */}
+      <section id="offer">
+        <SectionDivider />
+        <WhatIOffer />
+      </section>
+      
+      {/* Herramientas */}
+      <section id="tools">
+        <SectionDivider />
+        <ToolsSection />
+      </section>
+      
+      {/* Footer */}
+      <Footer />
+      
+      {/* Botón scroll to top */}
+      <ScrollToTop />
     </main>
   );
 }

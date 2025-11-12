@@ -21,29 +21,37 @@ html {
   }
 }
 
+/* Optimización para móviles - reducir animaciones */
+@media (max-width: 768px) {
+  * {
+    animation-duration: 0.2s !important;
+    transition-duration: 0.2s !important;
+  }
+}
+
 html,
 body {
-  color: #ffffff;
-  background: #0a0a0a;
+  color: #1a1a1a;
+  background: #fafafa;
   min-height: 100vh;
   overflow-x: hidden;
 }
 
 main {
-  background: #0a0a0a;
+  background: #fafafa;
   min-height: 100vh;
   min-height: 100dvh;
 }
 
 /* Variables CSS personalizadas */
 :root {
-  --primary: #ffffff;
-  --secondary: #d4d4d4;
-  --accent: #525252;
-  --darkBg: #0a0a0a;
-  --darkGray: #171717;
-  --mediumGray: #262626;
-  --lightGray: #404040;
+  --primary: #1a1a1a;
+  --secondary: #666666;
+  --accent: #999999;
+  --darkBg: #fafafa;
+  --darkGray: #f5f5f5;
+  --mediumGray: #f0f0f0;
+  --lightGray: #e5e5e5;
 }
 
 /* Estilos para el scrollbar */
@@ -52,16 +60,16 @@ main {
 }
 
 ::-webkit-scrollbar-track {
-  background: #171717;
+  background: #f0f0f0;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #525252;
+  background: #999999;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #737373;
+  background: #666666;
 }
 
 /* Animaciones personalizadas sutiles */
@@ -136,6 +144,6 @@ main {
   }
   
   .bg-gradient-cover {
-    background: #0a0a0a;
+    background: #fafafa;
   }
 }

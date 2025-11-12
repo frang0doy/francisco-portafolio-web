@@ -36,12 +36,12 @@ const TechIcon = ({ name, className = "w-8 h-8" }: TechIconProps) => {
         ),
         "CSS3": (
             <svg className={className} viewBox="0 0 24 24" fill="currentColor">
-                <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z" fill="#1572B6"/>
+                <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z" fill="#374151"/>
             </svg>
         ),
         "Tailwind CSS": (
             <svg className={className} viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z" fill="#06B6D4"/>
+                <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z" fill="#374151"/>
             </svg>
         ),
         ".NET/C#": (
@@ -106,11 +106,23 @@ const TechIcon = ({ name, className = "w-8 h-8" }: TechIconProps) => {
         )
     };
 
-    return iconMap[name] || (
-        <div className={`${className} bg-gray-600 rounded flex items-center justify-center text-white text-xs font-bold`}>
+    // Si no hay icono, crear uno genérico con mejor visibilidad
+    const fallbackIcon = (
+        <div className={`${className} bg-white rounded flex items-center justify-center text-black text-xs font-bold border-2 border-white`}>
             {name.charAt(0)}
         </div>
     );
+    
+    // Mostrar iconos en su color original
+    if (iconMap[name]) {
+        return (
+            <div className="flex items-center justify-center">
+                {iconMap[name]}
+            </div>
+        );
+    }
+    
+    return fallbackIcon;
 };
 
 export default TechIcon;
