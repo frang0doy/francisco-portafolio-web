@@ -22,7 +22,7 @@ const Header = () => {
                                 href={src}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                aria-label={`Visitar perfil en ${src.includes('linkedin') ? 'LinkedIn' : src.includes('twitter') ? 'Twitter' : src.includes('instagram') ? 'Instagram' : 'Red social'}`}
+                                aria-label={`Visitar perfil en ${src.includes('linkedin') ? 'LinkedIn' : src.includes('wa.me') ? 'WhatsApp' : src.includes('instagram') ? 'Instagram' : 'Red social'}`}
                                 className="transition-all duration-300 hover:text-secondary focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 focus:ring-offset-darkBg rounded"
                             >
                                 {logo}

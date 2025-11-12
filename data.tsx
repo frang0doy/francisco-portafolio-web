@@ -1,4 +1,4 @@
-import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Twitter, Rss, Twitch, Youtube, Crop, Pencil, Computer, Book, Rocket, Instagram, Speech } from "lucide-react";
+import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Rss, Twitch, Youtube, Crop, Pencil, Computer, Book, Rocket, Instagram, Speech, Layout, Code, Server, Globe, Settings } from "lucide-react";
 
 export const socialNetworks = [
     {
@@ -8,8 +8,12 @@ export const socialNetworks = [
     },
     {
         id: 3,
-        logo: <Twitter size={30} strokeWidth={1} />,
-        src: "https://x.com/frang0doy?mx=2",
+        logo: (
+            <svg width={30} height={30} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1} strokeLinecap="round" strokeLinejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+            </svg>
+        ),
+        src: "https://wa.me/5492314577877",
     },
     {
         id: 4,
@@ -154,29 +158,34 @@ export const dataCounter = [
 
 export const serviceData = [
     {
-        icon: <Crop />,
-        title: "Branding",
-        description: "Desarrollo de una identidad de marca sólida y coherente, incluyendo diseño de logotipo.",
+        icon: <Layout />,
+        title: "Prototipado y Diseño",
+        description: "Creación de prototipos y diseños UI/UX profesionales. Planificación completa de la estructura y experiencia de usuario antes del desarrollo.",
     },
     {
-        icon: <Pencil />,
-        title: "Diseño web",
-        description: "Diseño creativo y profesional de interfaces web intuitivas y atractivas, centradas en la experiencia del usuario",
+        icon: <Code />,
+        title: "Desarrollo Frontend",
+        description: "Desarrollo de interfaces modernas y responsivas con React, Vue.js, Angular y Next.js. Código limpio, optimizado y escalable.",
     },
     {
-        icon: <Computer />,
-        title: "Desarrollo web",
-        description: "Diseño y desarrollo de sitios web a medida, adaptados a tus necesidades",
+        icon: <Server />,
+        title: "Desarrollo Backend",
+        description: "Construcción de APIs robustas y bases de datos con .NET/C#, Node.js, Python y SQL Server. Arquitectura escalable y segura.",
     },
     {
-        icon: <Book />,
-        title: "Copywriting",
-        description: "Creación de contenido persuasivo y atractivo que capta la atención de tu audiencia",
+        icon: <Globe />,
+        title: "Dominio y Hosting",
+        description: "Configuración completa de dominio, hosting y despliegue. Gestión de DNS, SSL y optimización del rendimiento del servidor.",
     },
     {
         icon: <Rocket />,
-        title: "SEO",
-        description: "Optimización de tu presencia en línea mediante estrategias de SEO avanzadas, ",
+        title: "Optimización y SEO",
+        description: "Optimización de rendimiento, velocidad de carga y posicionamiento SEO. Mejora continua de la visibilidad en buscadores.",
+    },
+    {
+        icon: <Settings />,
+        title: "Mantenimiento y Soporte",
+        description: "Soporte técnico continuo, actualizaciones de seguridad, backups y monitoreo. Tu sitio siempre funcionando al 100%.",
     },
 ];
 
@@ -220,46 +229,16 @@ export const skillsData = [
 export const dataPortfolio = [
     {
         id: 1,
-        title: "Web ProtoNature",
-        image: "/image-1.jpg",
+        title: "Grupo A",
+        image: "/grupoa.png",
         urlGithub: "",
-        urlDemo: "https://www.protonature.com/",
-        technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Stripe"],
-        description: "E-commerce completo desarrollado en React con funcionalidades avanzadas como gestión de productos, carrito de compras, pagos integrados y autenticación de usuarios.",
+        urlDemo: "https://grupoa.com.ar",
+        technologies: ["Next.js", "JavaScript", "Tailwind CSS", "GSAP"],
+        description: "Landing page minimalista para marca de diseño, construcción e instalación con enfoque en espacios modernos y funcionales.",
         showCodeButton: false
     },
     {
         id: 2,
-        title: "Aplicación del Clima",
-        image: "/image-2.jpg",
-        urlGithub: "https://github.com/frang0doy/widget",
-        urlDemo: "https://widget-puce-nu.vercel.app/",
-        technologies: ["React", "JavaScript", "API Integration", "CSS3"],
-        description: "Aplicación meteorológica que permite consultar el pronóstico en tiempo real de cualquier ciudad del mundo con una interfaz limpia y fácil de usar.",
-        showCodeButton: true
-    },
-    {
-        id: 3,
-        title: "Dashboard Administrativo",
-        image: "/image-3.png",
-        urlGithub: "http://github.com/frang0doy/dashboard",
-        urlDemo: "https://dashboard-three-sooty-78.vercel.app/login",
-        technologies: ["React", "Node.js", "MongoDB", "JWT", "Chart.js"],
-        description: "Dashboard completo con sistema de autenticación, gráficos interactivos y gestión de datos en tiempo real para administración empresarial.",
-        showCodeButton: true
-    },
-    {
-        id: 4,
-        title: "Haras Chimpay",
-        image: "/haras-chimpay.png",
-        urlGithub: "",
-        urlDemo: "https://www.haraschimpay.com/",
-        technologies: ["Vue.js", "Nuxt.js", "Tailwind CSS", "Firebase"],
-        description: "Sitio web corporativo para empresa equina con diseño responsivo, galería de imágenes y sistema de contacto integrado.",
-        showCodeButton: false
-    },
-    {
-        id: 5,
         title: "WentzelPharma",
         image: "/wentzel.png",
         urlGithub: "https://github.com/frang0doy/wentzel-pharma",
@@ -269,14 +248,44 @@ export const dataPortfolio = [
         showCodeButton: true
     },
     {
-        id: 6,
-        title: "Grupo A",
-        image: "/grupoa.png",
+        id: 3,
+        title: "Haras Chimpay",
+        image: "/haras-chimpay.png",
         urlGithub: "",
-        urlDemo: "https://grupo-a.netlify.app/",
-        technologies: ["Next.js", "JavaScript", "Tailwind CSS", "GSAP"],
-        description: "Landing page minimalista para marca de diseño, construcción e instalación con enfoque en espacios modernos y funcionales.",
+        urlDemo: "https://www.haraschimpay.com/",
+        technologies: ["Vue.js", "Nuxt.js", "Tailwind CSS", "Firebase"],
+        description: "Sitio web corporativo para empresa equina con diseño responsivo, galería de imágenes y sistema de contacto integrado.",
         showCodeButton: false
+    },
+    {
+        id: 4,
+        title: "Web ProtoNature",
+        image: "/image-1.jpg",
+        urlGithub: "",
+        urlDemo: "https://www.protonature.com/",
+        technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Stripe"],
+        description: "E-commerce completo desarrollado en React con funcionalidades avanzadas como gestión de productos, carrito de compras, pagos integrados y autenticación de usuarios.",
+        showCodeButton: false
+    },
+    {
+        id: 5,
+        title: "Dashboard Administrativo",
+        image: "/image-3.png",
+        urlGithub: "http://github.com/frang0doy/dashboard",
+        urlDemo: "https://dashboard-three-sooty-78.vercel.app/login",
+        technologies: ["React", "Node.js", "MongoDB", "JWT", "Chart.js"],
+        description: "Dashboard completo con sistema de autenticación, gráficos interactivos y gestión de datos en tiempo real para administración empresarial.",
+        showCodeButton: true
+    },
+    {
+        id: 6,
+        title: "Aplicación del Clima",
+        image: "/image-2.jpg",
+        urlGithub: "https://github.com/frang0doy/widget",
+        urlDemo: "https://widget-puce-nu.vercel.app/",
+        technologies: ["React", "JavaScript", "API Integration", "CSS3"],
+        description: "Aplicación meteorológica que permite consultar el pronóstico en tiempo real de cualquier ciudad del mundo con una interfaz limpia y fácil de usar.",
+        showCodeButton: true
     },
 ];
 

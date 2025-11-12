@@ -1,6 +1,5 @@
 "use client"
 
-import CircleImage from "@/components/circle-image";
 import SliderServices from "@/components/slider-services";
 import TransitionPage from "@/components/transition-page";
 import { motion } from 'framer-motion';
@@ -9,10 +8,9 @@ const ServicesPage = () => {
     return (
         <>
             <TransitionPage />
-            <CircleImage />
-            <div className="grid items-center justify-center min-h-screen max-w-6xl gap-8 mx-auto md:grid-cols-2 px-4 sm:px-6 py-20">
+            <div className="grid items-center justify-items-start min-h-screen max-w-6xl gap-8 mx-auto md:grid-cols-2 py-20">
                 <motion.div 
-                    className="max-w-[500px] mt-28"
+                    className="max-w-[500px] mt-28 w-full container mx-0"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.4 }}
@@ -35,9 +33,8 @@ const ServicesPage = () => {
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.3, delay: 0.2 }}
                     >
-                        Ofrezco servicios completos de desarrollo web, desde el diseño hasta la implementación. 
-                        Utilizo las tecnologías más modernas como React, Vue.js, Angular, .NET/C#, y SQL Server 
-                        para crear aplicaciones web escalables, funcionales y visualmente atractivas.
+                        Ofrezco un servicio completo e integral de desarrollo web, abarcando todos los pasos desde el prototipado inicial hasta la configuración de dominio y hosting. 
+                        Trabajo con las tecnologías más modernas como React, Vue.js, Angular, .NET/C# y SQL Server para crear soluciones web escalables, funcionales y de alto rendimiento.
                     </motion.p>
 
                     <motion.div
@@ -48,19 +45,23 @@ const ServicesPage = () => {
                     >
                         <div className="flex items-center gap-3">
                             <div className="w-2 h-2 bg-secondary rounded-full"></div>
-                            <span className="text-gray-300">Desarrollo Frontend con React, Vue.js y Angular</span>
+                            <span className="text-gray-300">Prototipado y diseño UI/UX profesional</span>
                         </div>
                         <div className="flex items-center gap-3">
                             <div className="w-2 h-2 bg-secondary rounded-full"></div>
-                            <span className="text-gray-300">Desarrollo Backend con .NET/C# y Node.js</span>
+                            <span className="text-gray-300">Desarrollo completo Frontend y Backend</span>
                         </div>
                         <div className="flex items-center gap-3">
                             <div className="w-2 h-2 bg-secondary rounded-full"></div>
-                            <span className="text-gray-300">Diseño responsivo y optimización SEO</span>
+                            <span className="text-gray-300">Configuración de dominio y hosting</span>
                         </div>
                         <div className="flex items-center gap-3">
                             <div className="w-2 h-2 bg-secondary rounded-full"></div>
-                            <span className="text-gray-300">Integración de APIs y bases de datos</span>
+                            <span className="text-gray-300">Optimización SEO y rendimiento</span>
+                        </div>
+                        <div className="flex items-center gap-3">
+                            <div className="w-2 h-2 bg-secondary rounded-full"></div>
+                            <span className="text-gray-300">Mantenimiento y soporte continuo</span>
                         </div>
                     </motion.div>
 
@@ -77,7 +78,7 @@ const ServicesPage = () => {
 
                 {/* SLIDER mejorado */}
                 <motion.div 
-                    className="flex justify-center md:justify-start"
+                    className="flex justify-center w-full"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.4, delay: 0.1 }}

@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { dataPortfolio } from "@/data";
-import CircleImage from "@/components/circle-image";
 import TransitionPage from "@/components/transition-page";
 import ContainerPage from "@/components/container-page";
 import PortfolioBox from "@/components/portfolio-box";
@@ -14,7 +13,6 @@ const PortfolioPage = () => {
     return (
         <ContainerPage>
             <TransitionPage />
-            <CircleImage />
             <div className="flex flex-col justify-center h-full">
                 <motion.div
                     className="text-center mb-12"
@@ -23,14 +21,10 @@ const PortfolioPage = () => {
                     transition={{ duration: 0.4 }}
                 >
                     <h1 className="text-4xl leading-tight text-center md:text-5xl md:mb-6 font-bold tracking-tight">
-                        Mis últimos{' '}
                         <span className="text-primary">
-                            trabajos realizados
+                            Mis proyectos
                         </span>
                     </h1>
-                    <p className="text-secondary text-base md:text-lg mt-6 max-w-2xl mx-auto leading-relaxed">
-                        Una selección de proyectos que demuestran mi experiencia en desarrollo web moderno
-                    </p>
                 </motion.div>
 
                 <div className="relative z-10 grid max-w-7xl gap-6 mx-auto mt-12 md:grid-cols-2 lg:grid-cols-3">
