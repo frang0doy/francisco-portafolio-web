@@ -62,7 +62,7 @@ const TechIcon = ({ name, className = "w-8 h-8" }: TechIconProps) => {
                 console.error(`Error loading icon for ${name}:`, error);
                 setHasError(true);
             });
-    }, [slug, className]);
+    }, [slug, className, name]);
     
     if (!slug || hasError) {
         // Si no hay slug o hay error, crear un icono genérico
