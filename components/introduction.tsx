@@ -3,21 +3,21 @@ import { Mail, Download } from 'lucide-react';
 
 const Introduction = () => {
     return (
-        <section className="min-h-[70vh] flex items-center justify-center px-4 py-20 pt-32 bg-gray-900 text-white">
-            <div className="z-20 max-w-4xl mx-auto text-center">
+        <section className="min-h-screen flex items-center justify-center px-4 py-20 pt-32 bg-black text-white">
+            <div className="z-20 max-w-5xl mx-auto text-center">
                 <motion.div
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
-                            transition={{ 
-                                duration: 0.6,
-                                ease: [0.25, 0.1, 0.25, 1]
-                            }}
+                    transition={{ 
+                        duration: 0.8,
+                        ease: [0.16, 1, 0.3, 1]
+                    }}
                 >
-                    <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
-                        Portfolio
+                    <h1 className="text-5xl md:text-7xl font-semibold mb-8 tracking-tight">
+                        Francisco Godoy
                     </h1>
                     
-                    <p className="text-xl md:text-2xl text-gray-200 leading-relaxed mb-12 max-w-2xl mx-auto">
+                    <p className="text-lg md:text-xl text-secondary leading-relaxed mb-16 max-w-2xl mx-auto font-normal">
                         Desarrollo aplicaciones web escalables y funcionales integrando tecnologías modernas, 
                         con foco en experiencias simples y útiles.
                     </p>
@@ -27,9 +27,9 @@ const Introduction = () => {
                         <motion.a 
                             href="mailto:franciscogodoy_@hotmail.com"
                             aria-label="Contactar por email"
-                            className="flex items-center gap-2 px-8 py-4 bg-white text-black font-medium rounded-lg hover:bg-gray-200 transition-all duration-200 text-base shadow-lg hover:shadow-xl"
-                            whileHover={{ scale: 1.05, y: -2 }}
-                            whileTap={{ scale: 0.95 }}
+                            className="flex items-center gap-2 px-10 py-3 bg-white text-black font-medium rounded-sm hover:bg-secondary hover:text-white transition-all duration-300 text-sm"
+                            whileHover={{ opacity: 0.9 }}
+                            whileTap={{ scale: 0.98 }}
                         >
                             <Mail className="w-4 h-4" />
                             Contacta conmigo
@@ -41,9 +41,9 @@ const Introduction = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Descargar curriculum vitae"
-                            className="flex items-center gap-2 px-8 py-4 border-2 border-white text-white font-medium rounded-lg hover:bg-white hover:text-black transition-all duration-200 text-base shadow-lg hover:shadow-xl"
-                            whileHover={{ scale: 1.05, y: -2 }}
-                            whileTap={{ scale: 0.95 }}
+                            className="flex items-center gap-2 px-10 py-3 border border-white/20 text-white font-medium rounded-sm hover:border-white/40 hover:bg-white/5 transition-all duration-300 text-sm"
+                            whileHover={{ opacity: 0.9 }}
+                            whileTap={{ scale: 0.98 }}
                         >
                             <Download className="w-4 h-4" />
                             Descargar CV

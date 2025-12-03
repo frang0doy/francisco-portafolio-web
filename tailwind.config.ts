@@ -8,14 +8,18 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+      },
       colors: {
-        primary: "#1a1a1a",
-        secondary: "#666666",
-        accent: "#999999",
-        darkBg: "#fafafa",
-        darkGray: "#f5f5f5",
-        mediumGray: "#f0f0f0",
-        lightGray: "#e5e5e5",
+        primary: "#ffffff",
+        secondary: "#a3a3a3",
+        accent: "#737373",
+        darkBg: "#000000",
+        darkGray: "#0a0a0a",
+        mediumGray: "#171717",
+        lightGray: "#262626",
+        sectionGray: "#0f0f0f",
       },
       backgroundImage: {
         "gradient-cover":

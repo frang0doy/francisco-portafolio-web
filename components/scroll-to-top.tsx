@@ -35,7 +35,7 @@ const ScrollToTop = () => {
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0 }}
                     onClick={scrollToTop}
-                    className="fixed bottom-20 left-4 md:bottom-8 md:left-8 z-40 p-3 bg-gray-800 text-white rounded-full shadow-lg hover:bg-gray-700 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-gray-800 focus:ring-offset-2"
+                    className="fixed bottom-20 left-4 md:bottom-8 md:left-8 z-40 p-3 bg-mediumGray border border-white/10 text-white hover:bg-lightGray transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white/20 focus:ring-offset-2 focus:ring-offset-black"
                     aria-label="Volver arriba"
                     whileHover={{ scale: 1.1, y: -2 }}
                     whileTap={{ scale: 0.9 }}

@@ -5,7 +5,7 @@ import { socialNetworks } from '@/data';
 
 const Footer = () => {
     return (
-        <footer className="py-8 px-4 bg-gray-900 text-white border-t border-gray-700">
+        <footer className="py-12 px-4 bg-black text-white border-t border-lightGray/10">
             <div className="max-w-7xl mx-auto">
                 <div className="flex flex-col md:flex-row justify-between items-center gap-6">
                     <motion.div
@@ -14,7 +14,7 @@ const Footer = () => {
                         transition={{ duration: 0.4 }}
                         viewport={{ once: true }}
                     >
-                        <p className="text-gray-400 text-sm">
+                        <p className="text-secondary text-sm font-normal">
                             © {new Date().getFullYear()}. Desarrollado por Francisco Godoy
                         </p>
                     </motion.div>
@@ -32,7 +32,7 @@ const Footer = () => {
                                 href={social.src}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-white hover:text-gray-300 hover:scale-110 transition-all duration-200"
+                                className="text-secondary hover:text-white transition-all duration-300"
                                 aria-label={`Enlace a ${social.src}`}
                             >
                                 {social.logo}

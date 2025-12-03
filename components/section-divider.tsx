@@ -15,7 +15,7 @@ const SectionDivider = ({ className = "" }: SectionDividerProps) => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
         >
-            <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-gray-400 to-transparent"></div>
+            <div className="w-24 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
         </motion.div>
     );
 };

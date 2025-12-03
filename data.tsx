@@ -199,7 +199,6 @@ export const skillsData = [
             { name: "Next.js" },
             { name: "JavaScript" },
             { name: "HTML5" },
-            { name: "CSS3" },
             { name: "Tailwind CSS" },
         ]
     },
