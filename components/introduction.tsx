@@ -36,7 +36,7 @@ const Introduction = () => {
                         </motion.a>
 
                         <motion.a 
-                            href="/Francisco Godoy. Es .pdf.pdf"
+                            href="/FranciscoGodoyCV.pdf"
                             download="Francisco_Godoy_CV.pdf"
                             target="_blank"
                             rel="noopener noreferrer"

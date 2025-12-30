@@ -30,3 +30,5 @@ const ParallaxSection = ({ children, speed = 0.5, className = "" }: ParallaxSect
 };
 
 export default ParallaxSection;
+
+

@@ -29,14 +29,16 @@ const ProjectItem = ({ project, index, imageLoading, onImageLoad }: ProjectItemP
         offset: ["start end", "end start"]
     });
 
-    const imageY = useTransform(scrollYProgress, [0, 1], [0, index % 2 === 0 ? -50 : 50]);
-    const contentY = useTransform(scrollYProgress, [0, 1], [0, index % 2 === 0 ? 50 : -50]);
+    // Eliminamos el efecto parallax para mantener la alineación
+    const imageY = useTransform(scrollYProgress, [0, 1], [0, 0]);
+    const contentY = useTransform(scrollYProgress, [0, 1], [0, 0]);
 
     return (
         <motion.div
             key={project.id}
             ref={projectRef}
-            className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} gap-12 md:gap-16 items-start`}
+            className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} gap-12 md:gap-16`}
+            style={{ alignItems: 'flex-start' }}
             initial={{ 
                 opacity: 0, 
                 y: 30,
@@ -57,18 +59,26 @@ const ProjectItem = ({ project, index, imageLoading, onImageLoad }: ProjectItemP
             {/* Imagen del proyecto */}
             <motion.div 
                 className="flex-1 w-full"
-                style={{ y: imageY }}
+                style={{ y: imageY, alignSelf: 'flex-start' }}
             >
-                <div className="relative overflow-hidden group aspect-video">
+                <div className="relative overflow-hidden group aspect-video rounded-xl border border-lightGray/20 hover:border-secondary/40 transition-all duration-500 shadow-2xl hover:shadow-secondary/10 w-full">
                     {imageLoading && (
-                        <div className="absolute inset-0 bg-mediumGray"></div>
+                        <div className="absolute inset-0 bg-mediumGray rounded-xl"></div>
                     )}
+                    {/* Overlay de gradiente sutil */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-black/0 via-black/0 to-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 rounded-xl" />
+                    
+                    {/* Borde brillante en hover */}
+                    <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20 pointer-events-none">
+                        <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-secondary/0 via-secondary/20 to-secondary/0 blur-sm" />
+                    </div>
+                    
                     <Image
                         src={project.image}
                         alt={project.title}
                         width={800}
                         height={450}
-                        className={`w-full h-full object-cover group-hover:opacity-80 transition-opacity duration-700 ${
+                        className={`w-full h-full object-cover group-hover:scale-105 transition-all duration-700 ${
                             imageLoading ? 'opacity-0' : 'opacity-100'
                         }`}
                         loading="lazy"
@@ -80,10 +90,10 @@ const ProjectItem = ({ project, index, imageLoading, onImageLoad }: ProjectItemP
             {/* Contenido del proyecto */}
             <motion.div 
                 className="flex-1 space-y-6"
-                style={{ y: contentY }}
+                style={{ y: contentY, alignSelf: 'flex-start' }}
             >
                 <div>
-                    <h3 className="text-2xl md:text-3xl font-semibold text-white mb-4 tracking-tight">
+                    <h3 className="text-2xl md:text-3xl font-semibold text-white mb-4 tracking-tight leading-tight">
                         {project.title}
                     </h3>
                     
@@ -145,4 +155,6 @@ const ProjectItem = ({ project, index, imageLoading, onImageLoad }: ProjectItemP
 };
 
 export default ProjectItem;
+
+
 

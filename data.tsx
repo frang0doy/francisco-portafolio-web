@@ -238,6 +238,16 @@ export const dataPortfolio = [
     },
     {
         id: 2,
+        title: "Sistema de Gestión de Inventario",
+        image: "/sistema-inventario.png",
+        urlGithub: "",
+        urlDemo: "https://sistema-de-gestion-1-791o.onrender.com/",
+        technologies: ["Python", "Flask", "HTML", "CSS", "SQL"],
+        description: "Sistema completo de gestión de inventario desarrollado en Python con funcionalidades avanzadas como gestión de productos, filtros y búsqueda, importación/exportación CSV y estadísticas en tiempo real.",
+        showCodeButton: false
+    },
+    {
+        id: 3,
         title: "WentzelPharma",
         image: "/wentzel.png",
         urlGithub: "https://github.com/frang0doy/wentzel-pharma",
@@ -247,7 +257,7 @@ export const dataPortfolio = [
         showCodeButton: true
     },
     {
-        id: 3,
+        id: 4,
         title: "Haras Chimpay",
         image: "/haras-chimpay.png",
         urlGithub: "",
@@ -257,7 +267,7 @@ export const dataPortfolio = [
         showCodeButton: false
     },
     {
-        id: 4,
+        id: 5,
         title: "Web ProtoNature",
         image: "/image-1.jpg",
         urlGithub: "",
@@ -267,7 +277,7 @@ export const dataPortfolio = [
         showCodeButton: false
     },
     {
-        id: 5,
+        id: 6,
         title: "Dashboard Administrativo",
         image: "/image-3.png",
         urlGithub: "http://github.com/frang0doy/dashboard",
@@ -277,7 +287,7 @@ export const dataPortfolio = [
         showCodeButton: true
     },
     {
-        id: 6,
+        id: 7,
         title: "Aplicación del Clima",
         image: "/image-2.jpg",
         urlGithub: "https://github.com/frang0doy/widget",

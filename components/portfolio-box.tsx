@@ -31,36 +31,57 @@ const PortfolioBox = (props: PortfolioBoxProps) => {
             whileHover={{ y: -2 }}
         >
             {/* Imagen del proyecto */}
-            <div className="relative overflow-hidden rounded-t-2xl">
-                <Image
-                    src={image}
-                    alt={title}
-                    width={400} 
-                    height={250} 
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
-                
-                {/* Overlay con botones */}
-                <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                    {showCodeButton && urlGithub && (
-                        <Link
-                            href={urlGithub}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="p-3 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/30 transition-colors"
+            <div className="relative overflow-hidden rounded-t-2xl border-b border-lightGray/20 group-hover:border-secondary/40 transition-colors duration-300">
+                {/* Contenedor de imagen con efectos */}
+                <div className="relative overflow-hidden aspect-video">
+                    <Image
+                        src={image}
+                        alt={title}
+                        width={400} 
+                        height={250} 
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    
+                    {/* Overlay de gradiente mejorado */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    
+                    {/* Efecto de brillo en hover */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 -translate-x-full group-hover:translate-x-full" 
+                         style={{ transition: 'transform 0.7s ease-in-out, opacity 0.3s ease-in-out' }} />
+                    
+                    {/* Overlay con botones mejorado */}
+                    <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-all duration-300 z-10">
+                        {showCodeButton && urlGithub && (
+                            <motion.div
+                                initial={{ scale: 0, opacity: 0 }}
+                                whileHover={{ scale: 1.1 }}
+                                whileTap={{ scale: 0.95 }}
+                            >
+                                <Link
+                                    href={urlGithub}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="p-3 bg-white/20 backdrop-blur-md rounded-full hover:bg-white/30 transition-all duration-300 shadow-lg border border-white/20"
+                                >
+                                    <Github className="w-5 h-5 text-white" />
+                                </Link>
+                            </motion.div>
+                        )}
+                        <motion.div
+                            initial={{ scale: 0, opacity: 0 }}
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.95 }}
                         >
-                            <Github className="w-5 h-5 text-white" />
-                        </Link>
-                    )}
-                    <Link
-                        href={urlDemo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                            className="p-3 bg-secondary/60 backdrop-blur-sm rounded-full hover:bg-secondary transition-colors"
-                    >
-                        <ExternalLink className="w-5 h-5 text-white" />
-                    </Link>
+                            <Link
+                                href={urlDemo}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="p-3 bg-secondary/80 backdrop-blur-md rounded-full hover:bg-secondary transition-all duration-300 shadow-lg border border-secondary/30"
+                            >
+                                <ExternalLink className="w-5 h-5 text-white" />
+                            </Link>
+                        </motion.div>
+                    </div>
                 </div>
             </div>
 
