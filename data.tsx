@@ -227,11 +227,21 @@ export const skillsData = [
 
 export const dataPortfolio = [
     {
+        id: 8,
+        title: "Cop Recubrimientos",
+        image: "/cop-recubrimientos.png",
+        urlGithub: "",
+        urlDemo: "https://cop-zeta.vercel.app/",
+        description:
+            "Desarrollo de un e-commerce completo con gestión de usuarios, inicio de sesión y precios mayoristas personalizados según tipo de cliente. Integración de pasarela de pagos, carrito dinámico y administración de pedidos. Incluye panel de administración para gestión de productos, stock, categorías, precios y control de ventas. Plataforma diseñada con enfoque en rendimiento, escalabilidad y experiencia de usuario.",
+        showCodeButton: false,
+    },
+    {
         id: 1,
         title: "Grupo A",
         image: "/grupoa.png",
         urlGithub: "",
-        urlDemo: "https://grupoa.com.ar",
+        urlDemo: "https://grupo-a.netlify.app/",
         technologies: ["Next.js", "JavaScript", "Tailwind CSS", "GSAP"],
         description: "Landing page minimalista para marca de diseño, construcción e instalación con enfoque en espacios modernos y funcionales.",
         showCodeButton: false
